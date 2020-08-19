@@ -2,6 +2,7 @@ package com.example.coroutine
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.Dispatchers.IO
@@ -66,5 +67,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun logThread(methodName: String) {
         println("debug:${methodName}:${Thread.currentThread().name}")
+    }
+    private fun Salom(){
+        Toast.makeText(this, "Salom", Toast.LENGTH_SHORT).show()
     }
 }
