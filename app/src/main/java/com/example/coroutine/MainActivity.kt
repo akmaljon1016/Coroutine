@@ -68,5 +68,7 @@ class MainActivity : AppCompatActivity() {
     private fun logThread(methodName: String) {
         println("debug:${methodName}:${Thread.currentThread().name}")
     }
-
+    private fun Salom(){
+        Toast.makeText(this, "Salom", Toast.LENGTH_SHORT).show()
+    }
 }
